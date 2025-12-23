@@ -1,0 +1,10 @@
+Added Component: Designator=board1(nrf24)
+Added Component: Designator=board2(mpu6050)
+Added Component: Designator=board3(Adafruit_Feather_STM32F405)
+Added Component: Designator=board5(sd)
+Added Component: Designator=board8(microSD)
+Added Member To Class: ClassName=ankle_sch Member=Component board1 NRF24
+Added Member To Class: ClassName=ankle_sch Member=Component board2 MPUU6050
+Added Member To Class: ClassName=ankle_sch Member=Component board3 Adafruit_Feather_STM32F405
+Added Member To Class: ClassName=wrist_sch Member=Component board5 SD
+Added Member To Class: ClassName=wrist_sch Member=Component board8 MICROSD
