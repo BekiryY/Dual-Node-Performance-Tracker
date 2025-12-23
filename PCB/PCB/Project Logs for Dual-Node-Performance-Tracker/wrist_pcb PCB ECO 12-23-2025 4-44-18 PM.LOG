@@ -1,0 +1,12 @@
+Removed Member From Class: ClassName=ankle_sch Member=*
+Change Component Designator: OldDesignator=* NewDesignator=*1
+Change Component Designator: OldDesignator=* NewDesignator=*2
+Change Component Designator: OldDesignator=* NewDesignator=*3
+Added Component: Designator=board1(nrf24)
+Added Component: Designator=board2(mpu6050)
+Added Component: Designator=board3(Adafruit_Feather_STM32F405)
+Added Member To Class: ClassName=wrist_sch Member=Component *1 MAX30102
+Added Member To Class: ClassName=wrist_sch Member=Component *3 SD
+Added Member To Class: ClassName=ankle_sch Member=Component board1 NRF24
+Added Member To Class: ClassName=ankle_sch Member=Component board2 MPUU6050
+Added Member To Class: ClassName=ankle_sch Member=Component board3 Adafruit_Feather_STM32F405

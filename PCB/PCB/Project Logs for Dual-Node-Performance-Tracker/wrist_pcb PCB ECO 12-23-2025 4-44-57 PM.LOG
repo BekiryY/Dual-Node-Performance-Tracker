@@ -1,0 +1,10 @@
+Removed Member From Class: ClassName=wrist_sch Member=*1
+Removed Member From Class: ClassName=wrist_sch Member=*3
+Added Component: Designator=board4(nrf24)
+Added Component: Designator=board5(sd)
+Added Component: Designator=board6(max30102)
+Added Component: Designator=board7(Adafruit_Feather_STM32F405)
+Added Member To Class: ClassName=wrist_sch Member=Component board4 NRF24
+Added Member To Class: ClassName=wrist_sch Member=Component board5 SD
+Added Member To Class: ClassName=wrist_sch Member=Component board6 MAX30102
+Added Member To Class: ClassName=wrist_sch Member=Component board7 Adafruit_Feather_STM32F405
