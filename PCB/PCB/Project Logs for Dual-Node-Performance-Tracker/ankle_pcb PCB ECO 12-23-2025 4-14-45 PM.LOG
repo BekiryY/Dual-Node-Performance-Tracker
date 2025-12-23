@@ -1,0 +1,9 @@
+Added Component: Designator=*(max30102)
+Added Component: Designator=*(sd)
+Added Component: Designator=*(nrf24)
+Added Member To Class: ClassName=ankle_sch Member=Component * NRF24
+Added Member To Class: ClassName=ankle_sch Member=Component * MPUU6050
+Added Member To Class: ClassName=wrist_sch Member=Component * NRF24
+Added Member To Class: ClassName=wrist_sch Member=Component * MAX30102
+Added Member To Class: ClassName=wrist_sch Member=Component * SD
+Add Class Member: Failed to add class member : Component board Adafruit_Feather_STM32F405
