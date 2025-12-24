@@ -235,15 +235,15 @@ int main(void)
   	                      // Transmit Full Batch
   	                      NRF24_TX_Result_t res = NRF24_Transmit((uint8_t*)&sentData, sizeof(sentData));
 
-  	                      if(res == NRF24_TX_OK)
+  	                      while(res != NRF24_TX_OK)
   	                      {
-  	                          UART_SendString(">> FULL BATCH SENT: OK\r\n");
-  	                          HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5); // Blink LED
+  	                          UART_SendString(">> FULL BATCH SENT: FAILED. Retrying in 5s...\r\n");
+  	                          HAL_Delay(5000);
+  	                          res = NRF24_Transmit((uint8_t*)&sentData, sizeof(sentData));
   	                      }
-  	                      else
-  	                      {
-  	                          UART_SendString(">> FULL BATCH SENT: FAILED\r\n");
-  	                      }
+
+  	                      UART_SendString(">> FULL BATCH SENT: OK\r\n");
+  	                      HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5); // Blink LED
 
   	                      batch_index = 0; // Reset
   	                  }
@@ -275,15 +275,15 @@ int main(void)
   	              // Transmit Partial Batch
   	              NRF24_TX_Result_t res = NRF24_Transmit((uint8_t*)&sentData, sizeof(sentData));
 
-  	              if(res == NRF24_TX_OK)
+  	              while(res != NRF24_TX_OK)
   	              {
-  	                  UART_SendString(">> TIMEOUT FLUSH: OK\r\n");
-  	                  HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
+  	                  UART_SendString(">> TIMEOUT FLUSH: FAILED. Retrying in 5s...\r\n");
+  	                  HAL_Delay(5000);
+  	                  res = NRF24_Transmit((uint8_t*)&sentData, sizeof(sentData));
   	              }
-  	              else
-  	              {
-  	                  UART_SendString(">> TIMEOUT FLUSH: FAILED\r\n");
-  	              }
+
+  	              UART_SendString(">> TIMEOUT FLUSH: OK\r\n");
+  	              HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
 
   	              batch_index = 0; // Buffer cleared
   	          }
