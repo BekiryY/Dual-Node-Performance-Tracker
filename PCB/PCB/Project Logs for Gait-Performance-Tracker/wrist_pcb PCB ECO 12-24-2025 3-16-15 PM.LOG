@@ -1,0 +1,20 @@
+Change Footprint: Footprint Not Found Model Name
+Added Component: Designator=board1(nrf24)
+Added Component: Designator=board2(mpu6050)
+Added Component: Designator=board3(Adafruit_Feather_STM32F405)
+Added Pin To Net: NetName=MISO Pin=board7-4
+Added Pin To Net: NetName=MOSI Pin=board7-5
+Added Pin To Net: NetName=SCK Pin=board7-6
+Added Pin To Net: NetName=GND Pin=board7-13
+Added Pin To Net: NetName=3V3 Pin=board7-14
+Added Pin To Net: NetName=3V3 Pin=board7-15
+Added Pin To Net: NetName=5V0 Pin=board7-17
+Added Pin To Net: NetName=5V0 Pin=board7-19
+Added Pin To Net: NetName=CSN Pin=board7-22
+Added Pin To Net: NetName=CS Pin=board7-24
+Added Pin To Net: NetName=CE Pin=board7-25
+Added Pin To Net: NetName=SCL Pin=board7-27
+Added Pin To Net: NetName=SDA Pin=board7-28
+Added Member To Class: ClassName=ankle_sch Member=Component board1 NRF24
+Added Member To Class: ClassName=ankle_sch Member=Component board2 MPUU6050
+Added Member To Class: ClassName=ankle_sch Member=Component board3 Adafruit_Feather_STM32F405
