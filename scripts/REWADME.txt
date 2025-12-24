@@ -1,0 +1,3 @@
+step_data.csv is directly from sd card
+
+plot_csv.py is for generating a plot from given data
