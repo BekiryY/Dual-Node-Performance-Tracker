@@ -43,3 +43,10 @@ The wrist device runs an algorithm to measure the user's heart rate and fuses th
 
 ---
 **License:** MIT
+
+![ankle](https://github.com/user-attachments/assets/011a71ec-4dbb-48a4-b555-5f5374156115)
+![wrist](https://github.com/user-attachments/assets/702dad48-6953-44e8-9a41-87d90e5c3b93)
+![System](https://github.com/user-attachments/assets/4b5dbb95-0b41-4e0d-939f-851b85954224)
+
+
+
